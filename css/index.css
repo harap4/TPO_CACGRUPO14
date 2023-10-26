@@ -1,0 +1,109 @@
+/* -----------------LETRA---- */
+@font-face {
+    font-family:"Itim";
+    src: url('../fonts/Itim/Itim-Regular.ttf');
+}
+
+
+/* Selector universal */
+*{
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%; /*Elimina todo relleno que trae por defecto*/
+    font-family: "Itim";
+}
+
+
+
+h1{
+    color:rgba(39, 99, 245, 0.8);/* Color compuesto por tres canales: rojo, verde, azul yel canal alfa
+    que es la intensidad de la luz*/
+    font-size: 3vw;  /*Tamaño de texto*/
+    font-family: "Roboto"; /*fuente externa de Google fonts*/
+    
+    
+}
+
+.header-linea{
+    display: inline-block; /*Situa en linea el div y el nav*/
+    padding-right: 22vw; /*Separación a la derecha*/
+    padding-top: 3vh; /*Separación superior para el menu y logo*/
+    
+}
+
+.logo{
+    width: 5vw;  /*Ancho*/
+    height: 5vw;/*Altura*/
+}
+
+header{
+    background: #11111f; /*Degradado de colores*/
+    height: 15vh; /*Altura*/
+    font-size: 1.8vw; /*Tamaño de texto*/
+    text-align: end;  /*Alinear texto*/
+    position: fixed; /*POSICIÓN FIJA DEL ENCABEZADO*/
+    width: 100%; /*ANCHO TOTAL DEL ENCABEZADO*/
+   
+}
+
+
+.menu{
+    text-decoration: none; /*Elimina subrayado*/
+    color:#ffc72c;  /*Color texto*/
+    padding-right: 0.80vw; /*Separación entre el texto del menu*/
+   
+    
+}
+
+
+#s2{
+    
+    background-color: #ffc72c;/*Color dondo en la sección*/
+    font-size: 1.5vw;/*Tamaño de texto*/
+    margin: 5vw 5vh 5vw 5vh; /*separación del borde de la ventana
+    en el sentido de la agujas del reloj*/
+    
+}
+
+.parrafo{
+    padding: 10vw; /*Agrega relleno alrededor del párrafo*/
+   
+}
+
+
+footer{
+    background-color: #11111f;
+    height: 25vh; /*Altura*/
+    text-align: center; /*Alinear texto*/
+    color: aliceblue; /*Color del texto*/
+}
+
+.texto-pie{
+    padding-top: 8vh; /*Agrega separación del borde del pie de página al texto*/
+    font-size: 2vw; /*Tamaño de fuente*/
+}
+
+
+
+.s1{
+    background-image: url('../img/Transicion1.PNG');
+    background-repeat: no-repeat;
+    background-size:contain;
+    box-shadow: 0vw 0vh 1vw rgba(0, 0, 0, 0.5);
+    height: 40vh;
+    position: relative;
+    margin-bottom: 5vh;
+
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes mover {
+    0%{background-image: url('../img/Transicion2.PNG'); left: 0vw;top: 20vh;}
+    25%{background-image: url('../img/Transicion3.PNG');left: 15vw;top: 20vh;}
+    50%{background-image: url('../img/Transicion4.PNG');left: 35vw;top: 20vh;}
+    100%{background-image: url('../img/Transicion5.PNG');left: 65vw;top: 20vh;}
+}
+

@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family:"Itim";
+    src: url('../fonts/Itim/Itim-Regular.ttf');
+}
+
+*{
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%; /*Elimina todo relleno que trae por defecto*/
+    font-family: "Itim";
+}
+
+.logo{
+    width: 5vw;  /*Ancho*/
+    height: 5vw;/*Altura*/
+}
+
+header{
+    background: #11111f; /*Degradado de colores*/
+    height: 15vh; /*Altura*/
+    font-size: 2vw; /*Tamaño de texto*/
+    text-align: end;  /*Alinear texto*/
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+
+.menu{
+    text-decoration: none; /*Elimina subrayado*/
+    color:#ffc72c;  /*Color texto*/
+    padding-right: 0.80vw; /*Separación entre el texto del menu*/
+}
+
+.hipervinculo{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 1.5vw;
+    
+
+}
+
+/* Card para la imagen */
+.card{
+    background: radial-gradient(#2F527A, #0B223C);
+    width: 22vw;
+    height: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 2vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card > img{
+    width: 22vw;
+    height: auto;
+    border-radius: 2vh 2vh 0vh 0vh;
+}
+/* Pseudoclase */
+.card:hover{
+    color:#0B223C;
+    background: rgba(245, 245, 245, 0.72);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /*Sombra al pasar el cursor por cada caja*/
+    
+}
+
+.hipervinculo:hover{
+    color:black;
+}
+
+
+.s1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25vw,1fr));
+    justify-items: center;
+    row-gap: 3vh;
+    margin: 5vh;
+   
+}
+
+footer{
+    background-color: #11111f;
+    height: 25vh; /*Altura*/
+    text-align: center; /*Alinear texto*/
+    color: aliceblue; /*Color del texto*/
+}
+
+.texto-pie{
+    padding-top: 8vh; /*Agrega separación del borde del pie de página al texto*/
+    font-size: 2vw; /*Tamaño de fuente*/
+}
+
+.header-linea{
+    display: inline-block; /*Situa en linea el div y el nav*/
+    padding-right: 22vw; /*Separación a la derecha*/
+    padding-top: 3vh; /*Separación superior para el menu y logo*/
+}
+
+
+/* Puntos de cortes */
+@media screen and (max-width:600px){
+    .s1{
+       grid-template-columns:repeat(1, minmax(25vw,1fr))
+
+    }
+
+    .card{
+       width:55vw;
+       height:45vh;
+        
+    }
+
+    .card > img{
+        width:55vw;
+
+    }
+
+    .menu{
+       font-size:4vw;
+    }
+
+    .logo{
+        width:15vw;
+        
+    }
+
+    nav{
+        /* nav como columna
+        display, flex-direction */
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .hipervinculo{
+        font-size:4vw;
+    }
+    
+}

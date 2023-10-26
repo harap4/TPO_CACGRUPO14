@@ -1,0 +1,93 @@
+/* -----------------LETRA---- */
+@font-face {
+    font-family:"Itim";
+    src: url('../fonts/Itim/Itim-Regular.ttf');
+}
+
+*{
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%; /*Elimina todo relleno que trae por defecto*/
+    font-family: "Itim";
+}
+
+.header-linea{
+    display: inline-block; /*Situa en linea el div y el nav*/
+    padding-right: 22vw; /*Separación a la derecha*/
+    padding-top: 3vh; /*Separación superior para el menu y logo*/
+}
+
+.logo{
+    width: 5vw;  /*Ancho*/
+    height: 5vw;/*Altura*/
+    
+}
+
+header{
+    background: #11111f; /*Degradado de colores*/
+    height: 15vh; /*Altura*/
+    font-size: 2vw; /*Tamaño de texto*/
+    text-align: end;  /*Alinear texto*/
+    
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.menu{
+    text-decoration: none; /*Elimina subrayado*/
+    color:#ffc72c;  /*Color texto*/
+    padding-right: 0.80vw; /*Separación entre el texto del menu*/
+}
+
+#s2{
+    background-color:#11111f;/*Color dondo en la sección*/
+    font-size: 1.5vw;/*Tamaño de texto*/
+    margin: 5vw 5vh 5vw 5vh; /*separación del borde de la ventana
+    en el sentido de la agujas del reloj*/
+}
+
+
+footer{
+    background-color: #11111f;
+    height: 25vh; /*Altura*/
+    text-align: center; /*Alinear texto*/
+    color: aliceblue; /*Color del texto*/
+}
+    
+.texto-pie{
+    padding-top: 8vh; /*Agrega separación del borde del pie de página al texto*/
+    font-size: 2vw; /*Tamaño de fuente*/
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffc72c;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color:#11111f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    background-color:#11111f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
