@@ -12,11 +12,12 @@
     font-family: "Itim";
 }
 
-
+body{
+    background-color: cornflowerblue;
+}
 
 h1{
-    color:rgba(39, 99, 245, 0.8);/* Color compuesto por tres canales: rojo, verde, azul yel canal alfa
-    que es la intensidad de la luz*/
+    color:cornflowerblue;
     font-size: 3vw;  /*Tamaño de texto*/
     font-family: "Roboto"; /*fuente externa de Google fonts*/
     
@@ -40,7 +41,6 @@ header{
     height: 15vh; /*Altura*/
     font-size: 1.8vw; /*Tamaño de texto*/
     text-align: end;  /*Alinear texto*/
-    position: fixed; /*POSICIÓN FIJA DEL ENCABEZADO*/
     width: 100%; /*ANCHO TOTAL DEL ENCABEZADO*/
    
 }
